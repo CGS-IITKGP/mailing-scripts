@@ -38,7 +38,7 @@ with open(signature_file) as file:
     signature = file.read()
 
 def create_message(sender, to, subject, message):
-    formatted_sender = formataddr((str(Header('KOSS IIT Kharagpur', 'utf-8')), sender))
+    formatted_sender = formataddr((str(Header('CGS IIT Kharagpur', 'utf-8')), sender))
     message = (
         f"From: {formatted_sender}\n"
         f"To: {to}\n"
@@ -121,7 +121,7 @@ def main(subject_template, email_body_template, signature):
             email_body = fill_variables(email_body_template, variables)
             subject = fill_variables(subject_template, variables)
             
-            sender = "admin@kossiitkgp.org"
+            sender = "cgsiitkgp@gmail.com"
             email_content = email_body + "<br/>" + signature
             message = create_message(sender, email, subject, email_content)
             send_message(service, "me", {"raw": message})

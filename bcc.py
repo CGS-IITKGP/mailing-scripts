@@ -38,7 +38,7 @@ with open(signature_file) as file:
     signature = file.read()
 
 def create_message(sender, to, bcc, subject, message):
-    formatted_sender = formataddr((str(Header('KOSS IIT Kharagpur', 'utf-8')), sender))
+    formatted_sender = formataddr((str(Header('CGS IIT Kharagpur', 'utf-8')), sender))
     message = (
         f"From: {formatted_sender}\n"
         f"To: {to}\n"
@@ -125,7 +125,7 @@ def main(subject, email_body, signature):
             print(f"BCC TO: {email}")
             
         # Create a single message with BCC recipients
-        sender = "admin@kossiitkgp.org"  # Replace with your email address
+        sender = "cgsiitkgp@gmail.com"  # Replace with your email address
         bcc = ", ".join(emails)  # Join the emails with commas for BCC
         email_content = email_body + signature
         message = create_message(sender, "", bcc, subject, email_content)  # Set "to" as an empty string
