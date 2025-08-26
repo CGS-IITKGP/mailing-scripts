@@ -1,7 +1,7 @@
 # Mailing Automation Scripts
 
-Automates the mailing process for KOSS during various events like KWoC and selections.
- 
+Automates the mailing process for CGS Events
+
 > **Warning** Always do a test run before using the scripts, there are many things which might go wrong and we can't afford sending broken/incorrect mails to the reciepients.
 
 ### How to use
@@ -39,7 +39,7 @@ python3 bcc.py selections/round2-interview-slot r2d2.csv slot_time="Tuesday, 3 J
 
 1. Follow the steps at [Gmail API - Python Quickstart](https://developers.google.com/gmail/api/quickstart/python) guide to get `credentials.json`.
    > **Note** `credentials.json` is permanent until you delete it in your google clound console.<br>
-   > And make sure to add `admin@kossiitkgp.org` as a test user in case you made the app internal.
+   > And make sure to add `cgsiitkgp@gmail.com` as a test user in case you made the app internal.
 
 2. Follow the steps below to generate `token.json`:
     - Download [gentokenjson.py](https://gist.github.com/proffapt/adbc716a427c036f238e828d8995e1a3) in the same folder containing `credentials.json`
