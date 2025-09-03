@@ -4,7 +4,7 @@
 # Keep it updated.
 
 variable_column_mapping = {
-    "name": ["name"],
+    # "name": ["name"],
     # "taskURL": ["Tentative Task that you want to allot"],
     "email": ["email"]
 }
